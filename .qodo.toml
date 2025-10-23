@@ -1,0 +1,15 @@
+[config]
+model = "gpt-4o"
+
+[pr_reviewer]
+language = "ko"
+num_code_suggestions = 5
+
+[pr_description]
+language = "ko"
+
+[pr_code_suggestions]
+language = "ko"
+
+[pr_questions]
+language = "ko"
