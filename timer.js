@@ -1,19 +1,25 @@
-// timer.js - 문제가 있는 코드
+// timer.js - Improved version
 export class Timer {
-    constructor() {
-      this.t = 30  // 변수명이 불명확
+    constructor(initialTime = 30) {
+      this.initialTime = initialTime;
+      this.timeRemaining = initialTime;
     }
     
     getTime() {
-      return this.t
+      return this.timeRemaining;
     }
     
     tick() {
-      this.t = this.t - 1  // 간단히 this.t-- 로 가능
-      // edge case 처리 없음 (0 이하로 가면?)
+      if (this.timeRemaining > 0) {
+        this.timeRemaining--;
+      }
     }
     
     reset() {
-      this.t = 30
+      this.timeRemaining = this.initialTime;
+    }
+    
+    isFinished() {
+      return this.timeRemaining === 0;
     }
   }
