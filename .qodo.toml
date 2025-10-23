@@ -1,5 +1,6 @@
 [config]
 model = "gpt-4o"
+language = "ko"
 
 [pr_reviewer]
 language = "ko"
@@ -12,4 +13,19 @@ language = "ko"
 language = "ko"
 
 [pr_questions]
+language = "ko"
+
+[improve]
+language = "ko"
+
+[ask]
+language = "ko"
+
+[test]
+language = "ko"
+
+[describe]
+language = "ko"
+
+[update_changelog]
 language = "ko"
